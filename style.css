@@ -1,0 +1,639 @@
+body {
+    width: 100%;
+    transition: background 1s ease;
+    font-family: "Raleway", Arial, Tahoma, sans-serif;
+}
+
+.padding-100 {
+    padding: 50px 0px 10px 0px;
+}
+
+/* NAVBAR */
+.navbar {
+    transition: 0.5s all linear;
+    background-color: white;
+}
+
+.navbar.alt-color {
+    background-color: #0b66e6;
+    color: white !important;
+}
+
+.navbar ul li a {
+    font-size: 17px;
+    color: black;
+    letter-spacing: 1.5px;
+    font-weight: 550;
+}
+
+.navbar .nav-link::after {
+    color: white !important;
+}
+
+a.nav-link {
+    margin: 0px 17px;
+}
+
+a.nav-link:hover {
+    border-bottom: 4.5px #0b66e6 solid;
+    transition: border 0.3s ease 0s;
+}
+
+.navbar .active {
+    color: #0b66e6;
+}
+
+/* LANDING PAGE */
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-color: black;
+}
+
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-inner {
+    background-image: url("https://si.wsj.net/public/resources/images/B3-EU419_201908_GR_20190822110317.jpg") !important;
+    display: table;
+    opacity: .8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* .banner {
+    width: 100%;
+}
+
+.banner-inner img {
+    max-width: 1700px;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+} */
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 58%;
+    z-index: 1;
+}
+
+.caption h1 {
+    color: white;
+    font-style: italic;
+    font-size: 4.2rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    text-shadow: 0.1rem 0.1rem 0.8rem black;
+    padding-bottom: 1rem;
+}
+
+.caption h3 {
+    color: white;
+    font-size: 3.8em;
+    font-style: italic;
+}
+
+.caption .landing-link {
+    color: orange;
+    font-size: 1.8em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    display: inline-block !important;
+    text-decoration: underline;
+}
+
+/*============= MEDIA QUERIES =============*/
+@media (max-width: 1366px) {
+    .caption h1 {
+        font-size: 3.5rem;
+        letter-spacing: 0.2rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .caption h3 {
+        font-size: 2.2rem;
+        padding-bottom: 1.7rem;
+    }
+}
+
+/* Devices under 992px (lg) */
+@media (max-width: 991px) {
+    .caption h1 {
+        font-size: 3.5rem;
+        letter-spacing: 0.2rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .caption h3 {
+        font-size: 2.2rem;
+        padding-bottom: 1.7rem;
+    }
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767px) {
+    .caption h1 {
+        font-size: 2.7rem;
+        letter-spacing: 0.15rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .caption h3 {
+        font-size: 1.7rem;
+        padding-bottom: 1.2rem;
+    }
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 575px) {
+    .caption h1 {
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+        padding-bottom: 0.4rem;
+    }
+
+    .caption h3 {
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .banner-inner img {
+        max-width: 1700px;
+        width: 100%;
+    }
+
+    .caption .landing-link {
+        font-size: 17px;
+    }
+}
+
+
+/* ARTICLE SECTION */
+.article-section h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 40px;
+    color: #0b66e6;
+}
+
+.article-section .card {
+    border: none;
+}
+
+.article-section .card img {
+    height: 270px;
+    width: 300px;
+}
+
+.article-section .zoom {
+    transition: transform .4s ease-in-out;
+    margin: 0 auto;
+}
+
+.article-section .zoom:hover {
+    transform: scale(1.08);
+}
+
+.article-section .card-title {
+    font-size: 1.2em;
+    padding: 10px;
+    font-weight: 450;
+}
+
+.article-line {
+    border: 2px #0b66e6 solid;
+    margin-bottom: 16px;
+    margin: 0px 100px 16px 40px;
+}
+
+.article-section button {
+    display: inline-block;
+    border-radius: 6px;
+    transition: all 0.5s;
+    cursor: pointer;
+    background: #1a1a1a;
+    color: white;
+    padding: 8px;
+    margin: 0 50px;
+    box-shadow: 0.07rem 0rem 0rem grey;
+
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button:hover {
+    background: #0b66e6;
+    color: white;
+    font-weight: 600;
+}
+
+/* CAT SECTION */
+.cat-section h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.cat-section {
+    background-color: #0b66e6;
+    width: 100% !important;
+    color: white;
+}
+
+.cat-section img {
+    width: 590px;
+    height: 450px;
+    opacity: .95;
+}
+
+.cat-section .zoom {
+    transition: transform .4s ease-in-out;
+    margin: 0 auto;
+}
+
+.cat-section .zoom:hover {
+    transform: scale(1.08);
+}
+
+.cat-section .col-md-5 {
+    padding: 17px;
+}
+
+/* DOG SECTION */
+.dog-section {
+    margin-top: 20px;
+}
+
+.dog-section h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 40px;
+    color: #0b66e6;
+}
+
+.dog-section {
+    /* background-color: #f0f2f0; */
+    width: 100% !important;
+}
+
+.dog-section img {
+    width: 590px;
+    height: 450px;
+    opacity: .95;
+}
+
+.dog-section .zoom {
+    transition: transform .4s ease-in-out;
+    margin: 0 auto;
+}
+
+.dog-section .zoom:hover {
+    transform: scale(1.08);
+}
+
+.dog-section .col-md-5 {
+    padding: 17px;
+}
+
+/* CAROUSEL SECTION */
+.slider-section {
+    background-color: #0b66e6;
+    width: 100% !important;
+    color: white;
+}
+
+.slider-section h1 {
+    padding-bottom: 30px;
+}
+
+.slider-section .zoom {
+    transition: transform .4s ease-in-out;
+    margin: 0 auto;
+}
+
+.slider-section .zoom:hover {
+    transform: scale(1.08);
+}
+
+.carousel-nav-icon {
+    height: 28px;
+    width: 28px;
+}
+
+.carousel-item .col,
+.carousel-item .col-sm,
+.carousel-item .col-md {
+    margin: 8px;
+    height: 190px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-inner .carousel-img {
+    height: 430px;
+    /* opacity: .75; */
+    background-color: black;
+}
+
+/* PHOTO SECTION */
+.photo-section h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.photo-section h3 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 40px;
+}
+
+.photo-line {
+    border: 1px orange solid;
+    margin-bottom: 16px;
+    margin: 0px 100px 16px 40px;
+}
+
+.photo-section p {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.photo-section img {
+    width: 430px;
+    height: 350px;
+    border: 8px orange solid;
+}
+
+.photo-section .zoom {
+    transition: transform .5s ease-in-out;
+    margin: 0 auto;
+}
+
+.photo-section .zoom:hover {
+    transform: scale(1.08);
+}
+
+.photo-section .col-lg-4 {
+    margin-bottom: 26px;
+}
+
+/* FOOTER SECTION */
+.footer {
+    background: #0b66e6;
+    color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 10% 2%;
+    line-height: 1.8;
+    font-size: .9em;
+}
+
+.footer>.footer-meta {
+    max-width: 45ch;
+}
+
+.footer>.list-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer>.list-container>.footer-list {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.footer .list-title {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fafafa;
+    transition: 0.2s;
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: white;
+}
+
+.bottom {
+    background: #0b66e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 10%;
+}
+
+.bottom>.trademark {
+    color: #fafafa;
+    font-size: .8em;
+}
+
+.bottom>.social-links {
+    display: flex;
+}
+
+.bottom>.social-links .icons {
+    background: #fafafa;
+    box-sizing: border-box;
+    margin: 0 .5em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    padding: 6%;
+    transition: 0.2s;
+}
+
+.bottom>.social-links .icons:hover,
+.bottom>.social-links .icons:focus {
+    background: #0b66e6;
+    color: white;
+}
+
+.bottom>.social-links a {
+    color: #121212;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+
+    .footer,
+    .bottom {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer-meta {
+        margin: 0 auto;
+    }
+
+    .list-container {
+        justify-content: center;
+    }
+
+    .footer-list {
+        padding-bottom: 1em;
+    }
+
+    .trademark {
+        padding-bottom: 1em;
+    }
+}
+
+/* SHELTER SECTION */
+.shelter-landing {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+    background-color: black;
+}
+
+.shelter-inner {
+    background-image: url("https://2pp3om1qz9kn1dr2x35ei4br-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/Human-Pet-Friends-Sunset-Dog-Woman-Suit-Trust-3042751-e1555319090878-960x570.jpg") !important;
+    display: table;
+    opacity: .8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* ABOUT SECTION */
+.about-landing {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+    background-color: black;
+}
+
+.about-inner {
+    background-image: url("https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/860-header-dog-breeds.jpg") !important;
+    display: table;
+    opacity: .95;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* VOLUNTEER SECTION */
+.volunteer-landing {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+    background-color: black;
+}
+
+.volunteer-inner {
+    background-image: url("https://www.sciencenews.org/wp-content/uploads/2017/07/071917_ay_friendlydogs_main.jpg") !important;
+    display: table;
+    opacity: .95;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.icons {
+    width: 200px;
+    height: 200px;
+}
+
+/* CONTACT SECTION */
+.contact-landing {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+    background-color: black;
+}
+
+.contact-inner {
+    background-image: url("https://cdn0.wideopenpets.com/wp-content/uploads/2017/11/Untitled-design-67-770x405.jpg") !important;
+    display: table;
+    opacity: .95;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
