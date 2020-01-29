@@ -275,6 +275,13 @@ img {
     font-weight: 600;
 }
 
+/* Devices under 576px (sm) */
+@media (max-width: 575px) {
+    .article-section .card {
+        margin-bottom: 25px;
+    }
+}
+
 /* CAT SECTION */
 .cat-section h2 {
     font-size: 2.5rem;
@@ -290,8 +297,8 @@ img {
 }
 
 .cat-section img {
-    width: 590px;
-    height: 450px;
+    width: 560px;
+    height: 418px;
     opacity: .95;
 }
 
@@ -308,6 +315,14 @@ img {
     padding: 17px;
 }
 
+/* Devices under 576px (sm) */
+@media (max-width: 575px) {
+    .cat-section img {
+        height: 340px;
+
+    }
+}
+
 /* DOG SECTION */
 .dog-section {
     margin-top: 20px;
@@ -322,13 +337,12 @@ img {
 }
 
 .dog-section {
-    /* background-color: #f0f2f0; */
     width: 100% !important;
 }
 
 .dog-section img {
-    width: 590px;
-    height: 450px;
+    width: 560px;
+    height: 420px;
     opacity: .95;
 }
 
@@ -343,6 +357,14 @@ img {
 
 .dog-section .col-md-5 {
     padding: 17px;
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 575px) {
+    .dog-section img {
+        height: 341px;
+
+    }
 }
 
 /* CAROUSEL SECTION */
@@ -380,8 +402,7 @@ img {
 }
 
 .carousel-inner .carousel-img {
-    height: 430px;
-    /* opacity: .75; */
+    height: 420px;
     background-color: black;
 }
 
@@ -559,6 +580,10 @@ img {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     will-change: transform;
+}
+
+.add-shelter:hover {
+    background-color: #0b66e6;
 }
 
 /* ABOUT SECTION */
