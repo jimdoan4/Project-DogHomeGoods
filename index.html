@@ -16,6 +16,7 @@
             href="https://fonts.googleapis.com/css?family=Roboto%3A1%2C100%2C300%2C400%2C400italic%2C500%2C700%7CRaleway%3A1%2C100%2C300%2C400%2C400italic%2C500%2C700%7CAlegreya%3A1%2C100%2C300%2C400%2C400italic%2C500%2C700&amp;ver=5.2.5"
             type="text/css" media="all">
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <title>Dog Home Goods</title>
     </head>
 
@@ -58,7 +59,7 @@
             </div>
         </div> -
 
-        <div class="caption text-center">
+        <div class="caption text-center wow bounceInUp" data-wow-delay="0.5s">
                 <h1>Dog Home Goods <br />Best friends made here</h1>
             </div>
       
@@ -147,7 +148,7 @@
         <div class="container-fluid cat-section padding-100">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 wow bounceInUp" data-wow-delay="0.5s">
                         <h2>What’s interesting about cats</h2>
 
                         <div class="row">
@@ -169,7 +170,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 wow bounceInDown" data-wow-delay="1s">
                         <img class="img-fluid zoom"
                             src="https://www.catster.com/wp-content/uploads/2015/06/Adjust-to-smells-shutterstock_231260731.jpg" />
                     </div>
@@ -181,14 +182,14 @@
         <div class="container-fluid dog-section padding-100">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-5 wow bounceInUp" data-wow-delay="0.5s">
                         <img class="img-fluid zoom"
                             src="https://d3requdwnyz98t.cloudfront.net/assets/pages/index/breeds/golden-retriever-ba935fa08ad304ad36ec24652ddf68406f085fdae8adcea013d591fdac0de596.jpg" />
                     </div>
                     <div class="col-md-7">
                         <h2>What’s interesting about dogs</h2>
 
-                        <div class="row ml-4">
+                        <div class="row ml-4 wow bounceInDown" data-wow-delay="1s">
 
                             <div class="col-md-4">
                                 <p>Dogs are direct descendants of wolves. Puppies are blind, deaf and toothless when
@@ -361,6 +362,11 @@
 
         </script>
         <script src="script.js"></script>
+        <script src="wow.min.js"></script>
+        <script>
+          new WOW().init();
+    
+        </script>
     </body>
 
 </html>
